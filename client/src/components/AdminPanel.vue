@@ -24,6 +24,7 @@ export default {
 
 
 <style scoped>
+
 .space{
   height: 170px;
   width: 1px;

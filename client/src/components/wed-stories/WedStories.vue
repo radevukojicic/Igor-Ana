@@ -44,7 +44,7 @@
       </v-btn>
 
  <v-container style="width:80%" class="mt-12">
-      <v-layout row wrap>
+      <v-layout  wrap>
         <v-flex
          v-for="item in this.images"
          :key="item._id"

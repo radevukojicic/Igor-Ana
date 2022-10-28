@@ -131,6 +131,9 @@ export default {
 </script>
 
 <style scoped>
+a{
+  text-decoration: none;
+}
 .igor{
   font-size: 20px;
 }

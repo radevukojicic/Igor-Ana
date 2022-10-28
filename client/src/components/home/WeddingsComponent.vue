@@ -44,7 +44,10 @@ export default {
 </script>
 
 <style scoped>
-
+a{
+    text-decoration: none;
+    list-style: none;
+ }
   .home{
     display: flex;
     justify-content: center;

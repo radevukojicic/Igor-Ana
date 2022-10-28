@@ -41,10 +41,10 @@
 
       <v-btn 
         class="ml-10 mt-9"
-      ><h1>{{this.category}}</h1></v-btn>
+        >{{this.category}}</v-btn>
 
        <v-container  style="width:80%" class="mt-12">
-      <v-layout justify-center  row wrap>
+      <v-layout justify-center  wrap>
         <v-flex
          class="mx-auto"
          v-for="item in this.images"
@@ -315,7 +315,7 @@ import apiPost from "../../services/service"
         // Simple GET request using axios
 
        await apiPost.getPosts(this.category).then(async response => {
-          this.images = await response.datas
+          this.images = await response.data
        })
        
       } catch (error) {
@@ -445,6 +445,9 @@ import apiPost from "../../services/service"
 
 
 <style scoped>
+.row > * {
+  width: 33;
+}
   .bottom-gradient {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
   }

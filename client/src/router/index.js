@@ -13,6 +13,10 @@ import WedStoriesDetails from '../components/wed-stories/WedStoriesDetails.vue'
 import WeddingsComponent from '../components/home/WeddingsComponent.vue'
 import ContactComponent from '../components/home/ContactComponent.vue'
 import MainComponent from '../components/home/MainComponent.vue'
+import TravelPage from '../components/home/TravelPage.vue'
+import SocialPage from '../components/home/SocialPage.vue'
+import WeddingPage from '../components/home/WeddingPage.vue'
+import BirthdaysPage from '../components/home/BirthdaysPage.vue'
 import WeddingSingle from '../components/home/WeddingSingle.vue'
 import NotFound from '../components/NotFound.vue'
 
@@ -26,21 +30,56 @@ const routes = [
       {
         path: '/',
         name: 'Main',
+        meta: { title: 'i & a | destination photographers' },
         component: MainComponent
+      },
+      {
+        path: '/travel',
+        name: 'Travel',
+        meta: { title: 'i & a | travel' },
+
+        component: TravelPage
+      },
+      {
+        path: '/weddings',
+        name: 'Weddings Page',
+        meta: { title: 'i & a | weddings' },
+
+        component: WeddingPage
+      },
+      {
+        path: '/social',
+        name: 'Social Page',
+        meta: { title: 'i & a | social media' },
+
+        component: SocialPage
+      },
+      {
+        path: '/birthdays',
+        name: 'Birthdays',
+        meta: { title: 'i & a | birthdays' },
+
+        component: BirthdaysPage
       },
       {
         path: '/wedding-stories',
         name: 'Wedding Stories',
+        meta: { title: 'i & a | wedding stories' },
+
         component: WeddingsComponent
       },
       {
         path: '/contact',
         name: 'Contact',
+        meta: { title: 'i & a | contact' },
+
         component: ContactComponent
       },
       {
         path: '/wedding-stories/:id',
-        name: 'Wedding Stories',
+        meta: { title: 'i & a | wedding storie' },
+
+        name: 'Wedding Stories Single',
         component: WeddingSingle
       },
     ]
@@ -60,40 +99,54 @@ const routes = [
   {
   path: "/admin",
   component: AdminPanel,
+  meta: { title: 'Admin' },
   children: [
     {
       path: '/dashboard',
       name: 'dashboard',
+      meta: { title: 'Admin Naslovna' },
       component: HomeView
+
     },
     {
       path: '/travelView',
       name: 'travel',
+      meta: { title: 'Admin Travel' },
       component: TravelView
     },
     {
       path: '/birthdaysView',
       name: 'birthdays',
+      meta: { title: 'Admin Birthdays' },
+
       component: BirthdaysView
     },
     {
       path: '/socialView',
       name: 'Social',
+      meta: { title: 'Admin Social' },
+
       component: SocialView
     },
     {
       path: '/weddingsView',
       name: 'Weddings',
+      meta: { title: 'Admin Weddings' },
+
       component: WeddingsView
     },
     {
       path: '/wed-albums',
       name: 'WedStories',
+      meta: { title: 'Admin Wed Stories' },
+
       component: WedStories
     },
     {
       path: '/wed-albums/:id',
       name: 'WedStoriesDetails',
+      meta: { title: 'Admin Storie detail' },
+
       component: WedStoriesDetails
     },
   ]

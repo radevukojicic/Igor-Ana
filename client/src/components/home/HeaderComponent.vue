@@ -2,14 +2,14 @@
     <div class="homeNav">
 
     <!--DESKTOP HEADER -->
-    <div id="header">
+    <div style="padding-top: 20px;" id="header">
       <router-link to="/">
       <div class="logo">
         <h2>IGOR&ANA</h2>
         <h5>PHOTOGRAPHY</h5>
       </div>
       </router-link>
-      <nav style="margin-right:-220px">
+      <nav>
         <ul>
             <router-link to="/"><li class="underline">Home</li></router-link>
             <li id="portfolio"
@@ -21,10 +21,10 @@
               @mouseleave="hover = false" 
               :class="{ 'bigNav': hover }"
                class="drop">
-              <router-link class="link underline" to="/?query=travel">Travel</router-link>
-              <router-link class="link underline" to="/?query=weddings">Weddings</router-link>
-              <router-link class="link underline" to="/?query=birthdays">Birhdays</router-link>
-              <router-link class="link underline" to="/?query=social">Social Media</router-link>
+              <router-link class="link underline" to="/travel">Travel</router-link>
+              <router-link class="link underline" to="/weddings">Weddings</router-link>
+              <router-link class="link underline" to="/birthdays">Birhdays</router-link>
+              <router-link class="link underline" to="/social">Social Media</router-link>
             </div>
 
             <router-link to="/wedding-stories"><li class="underline">Wedding stories</li></router-link>
@@ -70,18 +70,16 @@
             <div id="dropDownMobile"
               :class="{ 'bigNav': hover }"
                class="dropDownMobile">
-              <router-link  class="link" to="/?query=travel">Travel</router-link>
-              <router-link class="link" to="/?query=weddings">Weddings</router-link>
-              <router-link class="link" to="/?query=birthdays">Birhdays</router-link>
-              <router-link   class="link" to="/?query=social">Social Media</router-link>
+              <router-link  class="link" to="/travel">Travel</router-link>
+              <router-link class="link" to="/weddings">Weddings</router-link>
+              <router-link class="link" to="/birthdays">Birhdays</router-link>
+              <router-link   class="link" to="/social">Social Media</router-link>
             </div>
 
             <router-link to="/wedding-stories"><li>Wedding stories</li></router-link>
             <router-link to="/contact"><li>Contact</li></router-link>
       </div>
-      <div class="footerMobileNav">
-        <FooterComponent/>
-      </div>
+      
     </v-navigation-drawer>
     </div>
 
@@ -90,11 +88,11 @@
 
 
 <script>
-import FooterComponent from '@/components/home/Footer.vue'
+// import FooterComponent from '@/components/home/Footer.vue'
 
 export default {
     name: "HeaderComponent",
-    components:{FooterComponent},
+    // components:{FooterComponent},
     data () {
         return {
            drawer: false,
@@ -114,6 +112,9 @@ export default {
 
 
 <style scoped>
+nav{
+  margin-right:-220px
+}
 .dropDownMobile a{
   color: rgb(91, 91, 91);
 }
@@ -271,6 +272,11 @@ export default {
     color: black;
     font-weight: bold;
   }
+  @media only screen and (max-width: 1200px) {
+  nav{
+    margin-right: 0px;
+  }
+}
   @media only screen and (max-width: 850px) {
   #header{
     display: none;

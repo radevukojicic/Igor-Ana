@@ -51,10 +51,10 @@
       </v-btn>
        <v-btn 
         class="ml-10 mt-9"
-      ><h1>{{this.wedName}}</h1></v-btn>
+      >{{this.wedName}}</v-btn>
 
        <v-container  style="width:80%" class="mt-12">
-      <v-layout justify-center  row wrap>
+      <v-layout justify-center   wrap>
         <v-flex
          class="mx-auto"
          v-for="item in this.images"

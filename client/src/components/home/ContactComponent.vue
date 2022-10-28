@@ -31,12 +31,15 @@
     </div>
 
     <div class="imageInfo">
+      
         <div>
                 <p><a href="tel:"><strong>Phone number:</strong>067 067 067</a></p>
-                <p><a href="mailto:"><strong>Mail:</strong>anaigor@gmail.com</a></p>
-                <div class="slika mar" >
-                </div>
+                <p><a href="mailto:ninkovicana05@gmail.com"><strong>Mail:</strong>ninkovicana05@gmail.com</a></p>
+                <div  class="slika">
+        
+      </div>
               </div>
+              
     </div>
   </div>
 </template>
@@ -106,6 +109,18 @@ export default {
 
 
 <style scoped>
+.slika{
+  background-image: url('http://localhost:3000/parr.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+ }
 .last{
     width: 100%;
 }
@@ -146,7 +161,6 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 .redovi div{
@@ -178,6 +192,16 @@ label{
 .imageInfo{
     text-align: left;
     margin-top: 60px;
+    margin-left: 70px;
+}
+@media only screen and (max-width: 850px) {
+  .imageInfo{
+    margin-left: 0px;
+  }
+  .slika{
+    width: 310px;
+    height: 310px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .redovi div{
