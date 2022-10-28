@@ -2,7 +2,7 @@
   <center>
     <h1>Stranica koju trazite ne postoji</h1>
     <p>
-      <a href="/dashboard">Nazad na pocetak! -> </a>
+      <router-link to="/">Home -></router-link>
     </p>
   </center>
 </template>
@@ -11,10 +11,6 @@
 
   export default {
     name: 'NotFound',
-
-    created(){
-      this.$router.push('/dashboard')
-    }
   }
 
 </script>

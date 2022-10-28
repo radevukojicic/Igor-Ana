@@ -1,9 +1,7 @@
 const express = require('express');
 
-//Web Site controllers
-const website = require('../controllers/website/pagesController')
-
-//CONTROLLERS ROUTES
+//WEBISTE ROUTES
+const webRoute = require('./websiteRoute')
 
 //posts
 const postRoute = require('./postRoute')
@@ -26,11 +24,8 @@ const admin = require('../middlewares/admin')
 function initRoutes(app) {
 
 
-    //WEB PAGES
-    app.get('/', website.index )
-    app.get('/contact', website.contact )
-    app.get('/wedd-stories', website.wedStories )
-    app.get('/wedd-stories/:id', website.wedStoriesSingle )
+    //WEB PAGES API
+    app.use('/website', webRoute)
     
 
 
@@ -45,10 +40,10 @@ function initRoutes(app) {
 
 
     //CARDS
-    app.use('/apiCard',  cardRoute)
+    app.use('/apiCard', admin,  cardRoute)
 
     //CARDS Gallery
-    app.use('/apiCardGallery',  cardGalleryRoute)
+    app.use('/apiCardGallery', admin ,  cardGalleryRoute)
 
 }
 

@@ -315,7 +315,7 @@ import apiPost from "../../services/service"
         // Simple GET request using axios
 
        await apiPost.getPosts(this.category).then(async response => {
-          this.images = await response.data
+          this.images = await response.datas
        })
        
       } catch (error) {

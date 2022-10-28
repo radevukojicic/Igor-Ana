@@ -85,7 +85,13 @@ export default {
                 this.loading = false 
             })
         },
-    }
+    },
+    mounted() {
+         const token = localStorage.getItem("token") ? localStorage.getItem("token") : null
+         if (token) {
+            this.$router.push('/dashboard')
+         } 
+    },
 };
 </script>
 

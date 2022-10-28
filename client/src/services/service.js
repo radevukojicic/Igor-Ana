@@ -38,6 +38,26 @@ apiClient.interceptors.response.use(response => {
 
 class postAPI {
 
+
+
+    //WEB PAGESS
+
+    static getWebImages(q){
+        return apiClient.get(`/website/category/${q}`,);
+    }
+    static getWebStories(){
+        return apiClient.get(`/website/stories`);
+    }
+
+    static getWeddingSingle(id){
+        return apiClient.get(`/website/stories/${id}`);
+    }
+
+
+    static sendEmail(data){
+        return apiClient.post(`/website`, data);
+    }
+
     // POSTS
 
 
