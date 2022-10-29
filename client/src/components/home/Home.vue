@@ -49,7 +49,7 @@ a{
      }
 }
  #main{
-    animation: coming 3s;
+    animation: comingpage 1.4s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
@@ -87,6 +87,17 @@ h1, h2, h3, h4, h5,
     opacity: 0;
   }
   to{
+    opacity: 1;
+  }
+ }
+ @keyframes comingpage{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
  }
