@@ -3,9 +3,12 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const path = require('path')
 const cors = require('cors')
+var history = require('connect-history-api-fallback');
+
 
 // Initialize the app
 const app = express();
+app.use(history())
 
 //Middlewears
 //Form data middlewear
@@ -51,6 +54,7 @@ app.get('/', (req,res) => {
 
 //Connect to port and start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app
+.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`)
 })
