@@ -43,8 +43,7 @@ a{
      }
 }
  #main{
-    animation: coming 1.7s;
-    animation-delay: 0.5s;
+    animation: coming 1.6s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
