@@ -49,7 +49,7 @@ const routes = [
       },
       {
         path: '/social',
-        name: 'Social Page',
+        name: 'SocialPage',
         meta: { title: 'i & a | social media' },
 
         component: SocialPage
@@ -177,8 +177,11 @@ router.beforeEach((to, from, next) => {
     var expired = JSON.parse(atob(localStorage.getItem('token').split('.')[1]));
     var time = (Date.now() < expired.exp * 1000)
   }
+    if(time && to.name==="Login"){
+      next({name: '/dashboard'})
+    }
     // If logged in, or going to the Login page.
-    if (time || to.name === 'Login' || to.name === 'Wedding Stories' || to.name === 'Contact'|| to.name === 'Main'|| to.name === 'Not Found') {
+    if (time || to.name==="SocialPage" || to.name==="Travel" || to.name==="Birthdays" || to.name==="Weddings Page" ||  to.name === 'Wedding Stories Single' || to.name === 'Login' || to.name === 'Wedding Stories' || to.name === 'Contact'|| to.name === 'Main'|| to.name === 'Not Found') {
       // Continue to page.
       next()
     } else {

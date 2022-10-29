@@ -200,7 +200,7 @@ nav{
     z-index: 500;
     position: absolute;
     margin-left: 70px;
-    margin-top: 28px;
+    margin-top: 26px;
     display: flex;
     flex-direction: column;
     width: 0px;
@@ -249,7 +249,7 @@ nav{
     text-align: center;
   }
   .logo h5{
-    transform: translateY(-8px);
+    transform: translateY(-18px);
     font-size: 14px;
   }
   .logo h2{

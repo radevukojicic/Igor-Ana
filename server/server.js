@@ -21,7 +21,7 @@ app.use(cors())
 
 //Setting up the static directory
 app.use(express.static(path.join(__dirname, 'public')))
-
+app.use(express.static(path.join(__dirname, '../client/dist')));
 //uploads file
 app.use(express.static("uploads"))
 // set the view engine to ejs
@@ -36,6 +36,10 @@ mongoose.connect(dataBaseUrl)
 
 //API
 require('./router/api')(app)
+
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
+  });
 
 //Handle production
 
