@@ -110,7 +110,7 @@ export default {
 
 <style scoped>
 .slika{
-  background-image: url('/parr.jpg');
+  background-image: url('http://206.189.11.247:3000/parr.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
