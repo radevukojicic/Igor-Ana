@@ -40,7 +40,7 @@ a{
         overflow: hidden;
         display: none;
     }
-    40%{
+    0%{
       opacity: 0;
       display: block;
     }
@@ -49,7 +49,7 @@ a{
      }
 }
  #main{
-    animation: comingpage 1.4s;
+    -webkit-animation: comingpage 1.7s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
@@ -92,13 +92,20 @@ h1, h2, h3, h4, h5,
  }
  @keyframes comingpage{
   0%{
-    opacity: 0;
+    -webkit-opacity: 0;
+  }
+  8%{
+    -webkit-opacity: 0;
+  }
+  25%{
+    -webkit-opacity: 0.25;
   }
   50%{
-    opacity: 0;
+    -webkit-opacity: 0.5;
+    
   }
   100%{
-    opacity: 1;
+    -webkit-opacity: 1;
   }
  }
  
