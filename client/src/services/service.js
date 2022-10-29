@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const apiClient = axios.create({
-    baseURL: `http://localhost:3000/`,
+    baseURL: `/`,
     withCredentials: false, 
     headers: {
         Accept: "application/json",
@@ -43,19 +43,19 @@ class postAPI {
     //WEB PAGESS
 
     static getWebImages(q){
-        return apiClient.get(`/website/category/${q}`,);
+        return apiClient.get(`website/category/${q}`,);
     }
     static getWebStories(){
-        return apiClient.get(`/website/stories`);
+        return apiClient.get(`website/stories`);
     }
 
     static getWeddingSingle(id){
-        return apiClient.get(`/website/stories/${id}`);
+        return apiClient.get(`website/stories/${id}`);
     }
 
 
     static sendEmail(data){
-        return apiClient.post(`/website`, data);
+        return apiClient.post(`website`, data);
     }
 
     // POSTS
@@ -86,7 +86,7 @@ class postAPI {
     }
     //Login
     static logIn(data){
-        return axios.post(`http://localhost:3000/apiUsers`, data)
+        return axios.post(`/apiUsers`, data)
     }
 
 

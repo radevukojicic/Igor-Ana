@@ -55,7 +55,7 @@
            class="ma-4"
          >
     <v-img
-       :src="`http://localhost:3000/`+item.image"
+       :src="`/`+item.image"
         aspect-ratio="1"
         class="grey lighten-2"
     ></v-img>

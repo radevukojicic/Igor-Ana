@@ -53,8 +53,8 @@
 
       <v-img
         width="244"
-        :src="`http://localhost:3000/resized/`+item.image"
-        :lazy-src="`http://localhost:3000/resized/`+item.image"
+        :src="`/resized/`+item.image"
+        :lazy-src="`/resized/`+item.image"
         aspect-ratio="1"
         class="grey lighten-2 mb-auto mx-auto mt-9"
       >

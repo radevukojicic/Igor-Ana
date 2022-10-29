@@ -2,7 +2,7 @@
    <div class="home">
       <div class="gallery">
           <router-link  v-for="item in this.images" :key="item.id" :to="`/wedding-stories/`+item._id">
-          <div :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(http://localhost:3000/${item.image})`}" class="wedStori"> 
+          <div :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(/${item.image})`}" class="wedStori"> 
           <h2 style="color: white;">
             {{item.name}}
               </h2>

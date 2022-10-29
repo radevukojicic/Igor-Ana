@@ -72,7 +72,7 @@ export default {
     }),
     methods: {
         login() {
-             axios.post("http://localhost:3000/apiUsers", this.form)
+             axios.post("/apiUsers", this.form)
             .then(response => {
                 window.localStorage.setItem("token", response.data.token);
                 this.loading = true

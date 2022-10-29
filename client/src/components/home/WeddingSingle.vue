@@ -7,7 +7,7 @@
 
           <div v-for="item in images" :key="item.id" class="card-container">
             <div class="card">
-              <img :src="`http://localhost:3000/`+item" alt="">
+              <img :src="`/`+item" alt="">
             </div>
           </div>
 
