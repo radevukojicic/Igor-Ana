@@ -4,7 +4,7 @@
    class="footer"
   >
       <v-card-text class="py-5 text-center">
-        Created with <v-icon color="red" small>fa-heart</v-icon>  by <strong>webdev</strong>
+        Created with <v-icon color="red" small>fa-heart</v-icon> | &copy; 2022 Igor&Ana.
       </v-card-text>
   </v-footer>
 </template>
