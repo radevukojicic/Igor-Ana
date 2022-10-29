@@ -37,6 +37,7 @@
     <div id="headerMobile">
  <v-app-bar 
   color="#FFFFFF"
+  fixed
   
  class="mb-11"  >
       <v-app-bar-nav-icon color="#000000" @click="drawer = true"></v-app-bar-nav-icon>

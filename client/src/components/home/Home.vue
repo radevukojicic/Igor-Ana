@@ -1,6 +1,7 @@
 <template>
     <div id="main">
       <Nav-bar/>
+      <div style="height: 100px;" ></div>
       <transition name="router-anim">
       <router-view/>
     </transition>
@@ -37,7 +38,6 @@ a{
      }
 }
  #main{
-    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-family: 'Raleway', sans-serif;
