@@ -231,7 +231,7 @@
       >
         <v-card>
           <v-card-title>
-            Dodaj fotografije
+            Dodaj vjenčanje
           </v-card-title>
           <v-card-text>
           <v-form 
