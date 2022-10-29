@@ -1,7 +1,7 @@
 <template>
     <div id="main">
       <Nav-bar/>
-      <div style="height: 100px;" ></div>
+      <div style="height: 100px;" class="spacerx" ></div>
       <transition name="router-anim">
       <router-view/>
     </transition>
@@ -25,6 +25,11 @@ export default {
 
 
 <style>
+@media only screen and (min-width: 851px) {
+  .spacerx{
+    display: none;
+  }
+}
 a{
     text-decoration: none;
     list-style: none;

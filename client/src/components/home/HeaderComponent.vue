@@ -283,7 +283,7 @@ nav{
     display: none;
   }
 }
- @media only screen and (min-width: 850px) {
+ @media only screen and (min-width: 851px) {
   #headerMobile{
     display: none;
   }
