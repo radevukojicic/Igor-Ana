@@ -43,8 +43,8 @@ a{
      }
 }
  #main{
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: coming 1.7s;
+    animation-delay: 0.5s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
