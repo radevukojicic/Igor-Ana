@@ -37,13 +37,19 @@ a{
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
+        overflow: hidden;
+        display: none;
+    }
+    40%{
+      opacity: 0;
+      display: block;
     }
     100% {
         opacity: 1;
      }
 }
  #main{
-    animation: coming 1.6s;
+    animation: coming 3s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     line-height: 1.8;
