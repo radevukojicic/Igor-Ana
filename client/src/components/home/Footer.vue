@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
       <div class="infos">
-          <v-icon class="insta">mdi-instagram</v-icon>
+          <a href="https://instagram.com/igor.bajceta?igshid=YmMyMTA2M2Y="><v-icon class="insta">mdi-instagram</v-icon></a>
           <p>&copy; 2022 Igor&Ana. <br> All Rights Reserved.</p>
       </div>
     </div>

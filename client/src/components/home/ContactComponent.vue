@@ -33,7 +33,7 @@
     <div class="imageInfo">
       
         <div>
-                <p><a href="tel:"><strong>Phone number:</strong>067 067 067</a></p>
+                <p><a href="tel:068843784"><strong>Phone number:</strong>068 843 784</a></p>
                 <p><a href="mailto:ninkovicana05@gmail.com"><strong>Mail:</strong>ninkovicana05@gmail.com</a></p>
                 <div  class="slika">
         
@@ -110,7 +110,7 @@ export default {
 
 <style scoped>
 .slika{
-  background-image: url('http://206.189.11.247:3000/parr.jpg');
+  background-image: url('https://www.lightsculpting.me/parr.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
