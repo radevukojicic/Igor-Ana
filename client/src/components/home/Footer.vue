@@ -17,6 +17,9 @@ export default {
 
 
 <style  scoped>
+a{
+    text-decoration: none;
+}
 #footer{
     display: flex;
     justify-content: center;
