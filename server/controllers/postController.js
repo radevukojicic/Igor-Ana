@@ -54,8 +54,8 @@ module.exports = class API {
   
             const { filename: image } = file;
             await sharp(file.path)
-                .resize(width,height)
-                .webp({ quality: 80 })
+                // .resize(width,height)
+                .webp({ quality: 50 })
                 .toFile(
                      path.resolve(file.destination,'resized',image)
                 )
@@ -112,8 +112,8 @@ module.exports = class API {
   
             const { filename: image } = file;
             await sharp(file.path)
-                .resize(width,height)
-                .webp({ quality: 80 })
+                // .resize(width,height)
+                .webp({ quality: 50 })
                 .toFile(
                      path.resolve(file.destination,'resized',image)
                 )
