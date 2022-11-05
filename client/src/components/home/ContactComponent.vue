@@ -33,11 +33,12 @@
     <div class="imageInfo">
       
         <div>
-                <p><a href="tel:068843784"><strong>Phone number:</strong>068 843 784</a></p>
-                <p><a href="mailto:ninkovicana05@gmail.com"><strong>Mail:</strong>ninkovicana05@gmail.com</a></p>
-                <div  class="slika">
+                <!-- <p><a href="tel:068843784"><strong>Phone number:</strong>068 843 784</a></p> -->
+                <p class="bigP" style="font-size:15px ;color:grey; "><a href="igorbajceta7@gmail.com"><strong>Mail:</strong>igorbajceta7@gmail.com</a></p>
+                <p class="smlP" style="font-size:15px ;color:grey; "><a href="igorbajceta7@gmail.com"><strong>Mail:</strong>igorbajceta7@gmail.com</a></p>
+                <!-- <div  class="slika"> -->
         
-      </div>
+      <!-- </div> -->
               </div>
               
     </div>
@@ -192,16 +193,33 @@ label{
 .imageInfo{
     text-align: left;
     margin-top: 60px;
-    margin-left: 70px;
+    margin-left: 0px;
+}
+.imageInfo p{
+  
+}
+.bigP{
+  margin-top: 500px;
+  display: block;
+}
+.smlP{
+  display: none;
 }
 @media only screen and (max-width: 850px) {
   .imageInfo{
-    margin-left: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .bigP{
+    display: none;
   }
   .slika{
     width: 310px;
     height: 310px;
   }
+  .smlP{
+  display: block;
+}
 }
 @media only screen and (max-width: 600px) {
   .redovi div{
@@ -210,5 +228,11 @@ label{
    .sh{
     margin-left: 0;
    }
+   .smlP{
+  display: block;
+}
+   .bigP{
+    display: none;
+  }
 }
 </style>
