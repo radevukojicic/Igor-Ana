@@ -35,9 +35,8 @@
         <div>
                 <!-- <p><a href="tel:068843784"><strong>Phone number:</strong>068 843 784</a></p> -->
                 <p class="bigP" style="font-size:15px ;color:grey; "><a href="mailto:igorbajceta7@gmail.com"><strong>Mail:</strong>igorbajceta7@gmail.com</a></p>
-                <p class="bigP" style="font-size:15px ;color:grey; "><a href="tel:068843784"><strong>Number:</strong>068 843 784</a></p>
                 <p class="smlP" style="font-size:15px ;color:grey; "><a href="mailto:igorbajceta7@gmail.com"><strong>Mail:</strong>igorbajceta7@gmail.com</a></p>
-                <p class="smlP" style="font-size:15px ;color:grey; "><a href="tel:068843784"><strong>Number:</strong>068 843 784</a></p>
+                <p style="font-size:15px ;color:grey; "><a href="tel:068843784"><strong>Number:</strong>068 843 784</a></p>
                 <!-- <div  class="slika"> -->
         
       <!-- </div> -->
